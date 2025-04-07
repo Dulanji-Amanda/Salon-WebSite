@@ -1,60 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beauty Salon</title>
-   <style>
-    body{
-        padding: 0;
-        margin: 0;
-        background:linear-gradient(to top,rgb(240, 112, 134),pink,white);
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-     }
-
-    .main-title {
-        font-size: 50px;
-        text-align: center;
-        color: rgb(132, 58, 70);
-        font-style: oblique;
-        margin-top: 20px;
-    }
-    .sub-title {
-        font-size: 30px;
-        text-align: center;
-        color: rgb(132, 58, 70);
-        font-style: oblique;
-    }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Beauty Salon</title>
+  <link rel="stylesheet" href="/css/index.css">
 </head>
 <body>
-    <header>
-        <!-- navigation bar -->
-        <nav style="display: flex;justify-content:space-between;align-items:center;background-color:rgb(132, 58, 70);padding:10px;">
-            <h1 style="color:white;">Beauty Salon</h1>
-            <ul style="list-style-type:none;display:flex;gap:20px;">
-                <li><a href="./../index.html" style="color:white;text-decoration:none;">Home</a></li>
-                <li><a href="./../pages/services.html" style="color:white;text-decoration:none;">Services</a></li>
-                <li><a href="./../pages/products.html" style="color:white;text-decoration:none;">Products</a></li>
-            </ul>
-    </header>
-    <img src="/assets/images/download.jpg"alt="home" style="float: left;margin-right:10px;width: 700px; height: 700px; object-fit: cover;"/>
-    <p class="main-title">Beauty Salon</p>
-    <p class="sub-title">Beauty begins the moment you decide to be yourself</p>
-    
-    <p  style="font-style:italic;font-size:20px;">Beauty is more than just appearance; it reflects self-care and confidence. A proper skincare routine is essential for maintaining healthy, glowing skin, preventing premature aging, and protecting against environmental damage. Regular salon visits provide professional care, deep cleansing, and treatments tailored to your skin’s needs, ensuring long-term health and radiance. 
-        Investing in skincare and salon treatments enhances both inner and outer beauty, boosting self-esteem and overall well-being.</p>
+  <header>
+    <nav class="nav-bar">
+      <h1 class="header-main-text">Beauty Salon</h1>
+      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+      <ul class="nav-links">
+        <li><a class="nav-link" href="/index.html">Home</a></li>
+        <li><a class="nav-link" href="/pages/services.html">Services</a></li>
+        <li><a class="nav-link" href="/pages/products.html">Products</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <section id="navigation">
-        <h3><nav style="display: flex;justify-content:left;gap: 120px;">
-            <li><a href="./../pages/services.html">Services</a></li>
-            <br/></br>
-            <li><a href="./../pages/products.html">Products</a></li>
-        </nav></h3>
-        <img src="/assets/images/sevices.jpg"alt="services" style="float: left;margin-right:10px;width: 300px; height: 300px; object-fit: cover;"/>
-        <img src="/assets/images/skinproducts.jpg"alt="products" style="float: left;margin-right:10px;width: 300px; height: 300px; object-fit: cover;"/>
-    </section>
-   
+  <img class="main-img" src="/assets/images/download.jpg" alt="home" />
+  <p class="main-title">Beauty Salon</p>
+  <p class="sub-title">Beauty begins the moment you decide to be yourself</p>
+
+  <p class="desc">
+    Beauty is more than just appearance; it reflects self-care and confidence.
+    A proper skincare routine is essential for maintaining healthy, glowing skin,
+    preventing premature aging, and protecting against environmental damage.
+    Regular salon visits provide professional care, deep cleansing, and treatments
+    tailored to your skin’s needs, ensuring long-term health and radiance.
+    Investing in skincare and salon treatments enhances both inner and outer beauty,
+    boosting self-esteem and overall well-being.
+  </p>
+
+  <section id="navigation">
+    <nav class="sub-nav">
+      <li><a href="/pages/services.html">Services</a></li>
+      <li><a href="/pages/products.html">Products</a></li>
+    </nav>
+    <img class="sub-imgs" src="/assets/images/sevices.jpg" alt="services" />
+    <img class="sub-imgs" src="/assets/images/skinproducts.jpg" alt="products" />
+  </section>
+
+  <script>
+    function toggleMenu() {
+      const navLinks = document.querySelector('.nav-links');
+      navLinks.classList.toggle('open');
+    }
+  </script>
 </body>
 </html>
