@@ -88,7 +88,9 @@ body {
     gap: 120px;
     margin-left: 20px;
   }
-
+  .topicc{
+    text-decoration: none;
+  }
   .desc {
     font-size: 20px;
     text-align: center;

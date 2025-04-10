@@ -1,0 +1,46 @@
+body{
+    background:linear-gradient(to top,rgb(234, 170, 181),white,white);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.main-topic{
+    font-style: oblique;
+    color:rgb(132, 58, 70);
+    text-align: center;
+}
+.p{
+    font-style: oblique;
+}
+.main-titles{
+    display: flex;
+    justify-content:left;
+    gap: 320px;
+}
+.img{
+    float: left;
+    margin-right:10px;
+    width: 320px;
+    height: 320px; 
+    object-fit: cover;
+}
+@media (max-width: 425px) {
+    body {
+        background: linear-gradient(to top, rgb(234, 170, 181), white);
+    }
+    .main-titles {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+    .img {
+        float: none;
+        margin: 10px auto;
+        width: 100%;
+        height: auto;
+    }
+    .p {
+        font-size: 14px;
+        text-align: justify;
+        padding: 0 10px;
+    }
+}
