@@ -72,6 +72,7 @@ body {
     width: 650px;
     height: 650px;
     object-fit: cover;
+    margin-top: 20px;
   }
 
   .sub-imgs {
@@ -80,13 +81,17 @@ body {
     width: 275px;
     height: 275px;
     object-fit: cover;
+    gap: 500px;
   }
 
   .sub-nav {
     display: flex;
     justify-content: left;
-    gap: 120px;
+    gap: 300px;
     margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+
   }
   .topicc{
     text-decoration: none;
