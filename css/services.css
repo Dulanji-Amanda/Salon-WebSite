@@ -1,28 +1,101 @@
-body{
-    background:linear-gradient(to top,rgb(234, 170, 181),white,white);
+
+body {
+    background: linear-gradient(to top, rgb(234, 170, 181), white, white);
     background-repeat: no-repeat;
     background-attachment: fixed;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: rgb(80, 40, 50);
 }
-.main-topic{
+
+.main-topic {
     font-style: oblique;
-    color:rgb(132, 58, 70);
+    color: rgb(132, 58, 70);
     text-align: center;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
 }
-.p{
+
+.p {
     font-style: oblique;
+    font-size: 1.2em;
+    margin: 20px 0;
+    line-height: 1.8;
+    padding: 0 20px;
 }
-.main-titles{
+
+.main-titles {
     display: flex;
-    justify-content:left;
+    justify-content: left;
     gap: 320px;
+    list-style: none;
+    padding: 0;
 }
-.img{
+
+.main-titles li a {
+    text-decoration: none;
+    font-size: 1.2em;
+    color: rgb(132, 58, 70);
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.main-titles li a:hover {
+    color: rgb(240, 112, 134);
+    transform: scale(1.1);
+}
+
+.img {
     float: left;
-    margin-right:10px;
+    margin-right: 10px;
     width: 320px;
-    height: 320px; 
+    height: 320px;
     object-fit: cover;
+    border: 5px solid rgb(240, 112, 134);
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+.img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button {
+    background-color: rgb(132, 58, 70);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: rgb(240, 112, 134);
+    transform: scale(1.1);
+}
+
+footer {
+    background-color: rgb(132, 58, 70);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+footer a {
+    color: rgb(240, 112, 134);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
 @media (max-width: 425px) {
     body {
         background: linear-gradient(to top, rgb(234, 170, 181), white);
@@ -42,5 +115,8 @@ body{
         font-size: 14px;
         text-align: justify;
         padding: 0 10px;
+    }
+    .main-topic {
+        font-size: 24px;
     }
 }
